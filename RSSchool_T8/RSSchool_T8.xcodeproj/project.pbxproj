@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		665DA2A726A47875001EFC24 /* DrawingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665DA2A626A47875001EFC24 /* DrawingsViewController.m */; };
 		66FCCB0826A205B500EAC984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FCCB0726A205B500EAC984 /* AppDelegate.m */; };
-		66FCCB0B26A205B500EAC984 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FCCB0A26A205B500EAC984 /* SceneDelegate.m */; };
 		66FCCB0E26A205B500EAC984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FCCB0D26A205B500EAC984 /* ViewController.m */; };
 		66FCCB1126A205B500EAC984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FCCB0F26A205B500EAC984 /* Main.storyboard */; };
 		66FCCB1326A205B600EAC984 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66FCCB1226A205B600EAC984 /* Assets.xcassets */; };
@@ -17,11 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		665DA2A526A47875001EFC24 /* DrawingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingsViewController.h; sourceTree = "<group>"; };
+		665DA2A626A47875001EFC24 /* DrawingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsViewController.m; sourceTree = "<group>"; };
 		66FCCB0326A205B500EAC984 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FCCB0626A205B500EAC984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66FCCB0726A205B500EAC984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		66FCCB0926A205B500EAC984 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		66FCCB0A26A205B500EAC984 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		66FCCB0C26A205B500EAC984 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		66FCCB0D26A205B500EAC984 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		66FCCB1026A205B500EAC984 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -63,8 +63,6 @@
 			children = (
 				66FCCB0626A205B500EAC984 /* AppDelegate.h */,
 				66FCCB0726A205B500EAC984 /* AppDelegate.m */,
-				66FCCB0926A205B500EAC984 /* SceneDelegate.h */,
-				66FCCB0A26A205B500EAC984 /* SceneDelegate.m */,
 				66FCCB0C26A205B500EAC984 /* ViewController.h */,
 				66FCCB0D26A205B500EAC984 /* ViewController.m */,
 				66FCCB0F26A205B500EAC984 /* Main.storyboard */,
@@ -72,6 +70,8 @@
 				66FCCB1426A205B600EAC984 /* LaunchScreen.storyboard */,
 				66FCCB1726A205B600EAC984 /* Info.plist */,
 				66FCCB1826A205B600EAC984 /* main.m */,
+				665DA2A526A47875001EFC24 /* DrawingsViewController.h */,
+				665DA2A626A47875001EFC24 /* DrawingsViewController.m */,
 			);
 			path = RSSchool_T8;
 			sourceTree = "<group>";
@@ -146,9 +146,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				66FCCB0E26A205B500EAC984 /* ViewController.m in Sources */,
+				665DA2A726A47875001EFC24 /* DrawingsViewController.m in Sources */,
 				66FCCB0826A205B500EAC984 /* AppDelegate.m in Sources */,
 				66FCCB1926A205B600EAC984 /* main.m in Sources */,
-				66FCCB0B26A205B500EAC984 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,7 +225,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -278,7 +278,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -294,6 +294,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5A66N432X8;
 				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +313,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5A66N432X8;
 				INFOPLIST_FILE = RSSchool_T8/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
