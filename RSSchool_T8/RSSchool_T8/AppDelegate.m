@@ -17,7 +17,9 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
 
-    [UIView appearance].tintColor = UIColor.systemRedColor;
+    [UIView appearance].tintColor = [UIColor colorNamed:@"Light Green Sea"];
+
+    [UINavigationBar appearance].titleTextAttributes = @{NSFontAttributeName:[UIFont fontWithName:@"Montserrat-Regular" size:17]};
     
     self.window.rootViewController = [self rootViewController];
     [self.window makeKeyAndVisible];

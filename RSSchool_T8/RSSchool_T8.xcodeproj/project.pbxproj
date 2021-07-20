@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66412A7A26A5ED1200AE9E7C /* STPButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 66412A7926A5ED1200AE9E7C /* STPButton.m */; };
+		66412A8026A6089C00AE9E7C /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66412A7E26A6089B00AE9E7C /* Montserrat-Medium.ttf */; };
+		66412A8126A6089C00AE9E7C /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 66412A7F26A6089B00AE9E7C /* Montserrat-Regular.ttf */; };
 		665DA2A726A47875001EFC24 /* DrawingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 665DA2A626A47875001EFC24 /* DrawingsViewController.m */; };
+		6677939126A73F120018E176 /* PaletteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6677939026A73F120018E176 /* PaletteViewController.m */; };
 		66FCCB0826A205B500EAC984 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FCCB0726A205B500EAC984 /* AppDelegate.m */; };
 		66FCCB0E26A205B500EAC984 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66FCCB0D26A205B500EAC984 /* ViewController.m */; };
 		66FCCB1126A205B500EAC984 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 66FCCB0F26A205B500EAC984 /* Main.storyboard */; };
@@ -17,8 +21,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		66412A7826A5ED1200AE9E7C /* STPButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STPButton.h; sourceTree = "<group>"; };
+		66412A7926A5ED1200AE9E7C /* STPButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STPButton.m; sourceTree = "<group>"; };
+		66412A7E26A6089B00AE9E7C /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		66412A7F26A6089B00AE9E7C /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		665DA2A526A47875001EFC24 /* DrawingsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DrawingsViewController.h; sourceTree = "<group>"; };
 		665DA2A626A47875001EFC24 /* DrawingsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawingsViewController.m; sourceTree = "<group>"; };
+		6677938F26A73F120018E176 /* PaletteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PaletteViewController.h; sourceTree = "<group>"; };
+		6677939026A73F120018E176 /* PaletteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PaletteViewController.m; sourceTree = "<group>"; };
 		66FCCB0326A205B500EAC984 /* RSSchool_T8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSchool_T8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66FCCB0626A205B500EAC984 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		66FCCB0726A205B500EAC984 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -42,6 +52,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		66412A7726A5EC9200AE9E7C /* UI Setup */ = {
+			isa = PBXGroup;
+			children = (
+				66412A7826A5ED1200AE9E7C /* STPButton.h */,
+				66412A7926A5ED1200AE9E7C /* STPButton.m */,
+			);
+			path = "UI Setup";
+			sourceTree = "<group>";
+		};
+		66412A7D26A6077000AE9E7C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				66412A7E26A6089B00AE9E7C /* Montserrat-Medium.ttf */,
+				66412A7F26A6089B00AE9E7C /* Montserrat-Regular.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6677938D26A73D3B0018E176 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				66FCCB0C26A205B500EAC984 /* ViewController.h */,
+				66FCCB0D26A205B500EAC984 /* ViewController.m */,
+				665DA2A526A47875001EFC24 /* DrawingsViewController.h */,
+				665DA2A626A47875001EFC24 /* DrawingsViewController.m */,
+				6677938F26A73F120018E176 /* PaletteViewController.h */,
+				6677939026A73F120018E176 /* PaletteViewController.m */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		66FCCAFA26A205B500EAC984 = {
 			isa = PBXGroup;
 			children = (
@@ -61,17 +102,16 @@
 		66FCCB0526A205B500EAC984 /* RSSchool_T8 */ = {
 			isa = PBXGroup;
 			children = (
+				66412A7D26A6077000AE9E7C /* Resources */,
+				66412A7726A5EC9200AE9E7C /* UI Setup */,
+				6677938D26A73D3B0018E176 /* View Controllers */,
 				66FCCB0626A205B500EAC984 /* AppDelegate.h */,
 				66FCCB0726A205B500EAC984 /* AppDelegate.m */,
-				66FCCB0C26A205B500EAC984 /* ViewController.h */,
-				66FCCB0D26A205B500EAC984 /* ViewController.m */,
 				66FCCB0F26A205B500EAC984 /* Main.storyboard */,
 				66FCCB1226A205B600EAC984 /* Assets.xcassets */,
 				66FCCB1426A205B600EAC984 /* LaunchScreen.storyboard */,
 				66FCCB1726A205B600EAC984 /* Info.plist */,
 				66FCCB1826A205B600EAC984 /* main.m */,
-				665DA2A526A47875001EFC24 /* DrawingsViewController.h */,
-				665DA2A626A47875001EFC24 /* DrawingsViewController.m */,
 			);
 			path = RSSchool_T8;
 			sourceTree = "<group>";
@@ -134,6 +174,8 @@
 			files = (
 				66FCCB1626A205B600EAC984 /* LaunchScreen.storyboard in Resources */,
 				66FCCB1326A205B600EAC984 /* Assets.xcassets in Resources */,
+				66412A8026A6089C00AE9E7C /* Montserrat-Medium.ttf in Resources */,
+				66412A8126A6089C00AE9E7C /* Montserrat-Regular.ttf in Resources */,
 				66FCCB1126A205B500EAC984 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,7 +187,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6677939126A73F120018E176 /* PaletteViewController.m in Sources */,
 				66FCCB0E26A205B500EAC984 /* ViewController.m in Sources */,
+				66412A7A26A5ED1200AE9E7C /* STPButton.m in Sources */,
 				665DA2A726A47875001EFC24 /* DrawingsViewController.m in Sources */,
 				66FCCB0826A205B500EAC984 /* AppDelegate.m in Sources */,
 				66FCCB1926A205B600EAC984 /* main.m in Sources */,
